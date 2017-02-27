@@ -2,6 +2,7 @@ html {
     min-height: 100%;
     margin:0;
     padding:0;
+    font-family:"Ubuntu", sans-serif;
 }
 body { margin:0; width:100%; height:100%; min-width:min-content; min-height:min-content; }
 .sidebar {
@@ -147,4 +148,39 @@ li.links {
 .social-media a {
     text-decoration: none;
     color:white;
+}
+#projects {
+    padding-top:40px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#projects div {
+    width:35%;
+    margin-bottom:20px;
+    background-color: #646464;
+    border-radius:20px;
+}
+#projects p {
+    padding-left:10px;
+    padding-right:30px;
+    color:white;
+}
+#projects img {
+    overflow: hidden;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+#projects h2 {
+    font-size: 20px;
+    text-align:center;
+    color:#a26262;
+}
+#projectcontents {
+    font-family:"Ubuntu", sans-serif;
+}
+#headerprojects {
+    text-align: center;
 }

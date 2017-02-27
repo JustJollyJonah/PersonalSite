@@ -8,9 +8,15 @@ $(document).ready(function() {
    });
    $(".home").click(function() {
       $('.articles').load("content.html #homecontent");
+      $(".header").show();
    });
     $(".contact").click(function() {
         $('.articles').load("content.html #contactcontent");
     });
-    
+    $(".projects").click(function() {
+       $('.articles').load("content.html #projectcontents");
+       $('.header').hide();
+    });
+
 });
+
