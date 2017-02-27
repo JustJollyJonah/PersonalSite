@@ -1,0 +1,150 @@
+html {
+    min-height: 100%;
+    margin:0;
+    padding:0;
+}
+body { margin:0; width:100%; height:100%; min-width:min-content; min-height:min-content; }
+.sidebar {
+    z-index:0;
+    position:fixed;
+    top:0px;
+    left:-190px;
+    bottom:0px;
+    width:120px;
+    padding:30px;
+    background:#333;
+    transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.sidebar h3 {
+    color: white;
+}
+.header {
+    display:block;
+    position:relative;
+    height:500px;
+    width:100%;
+    background-image: url(https://digital-photography-school.com/wp-content/uploads/flickr/205125227_3f160763a0_o.jpg);
+    background-size: cover;
+    margin:auto;
+
+}
+.page-content {
+    position:relative;
+    z-index: 0;
+    width:70%;
+    margin:auto;
+    height:100%;
+    left:0;
+    transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+.content-wrap {
+    height:100%;
+}
+.headertext h3, h4 {
+    color:white;
+}
+
+.page-content h3 {
+    position:absolute;
+    margin:auto;
+    top:40%;
+    bottom:0;
+    right:0;
+    left:0;
+    width:100%;
+    text-align: center;
+    font-size:34px;
+}
+.page-content h4 {
+    position:absolute;
+    margin:auto;
+    top:48%;
+    width:100%;
+    text-align:center;
+
+}
+li {
+    color:rgba(255,255,255, 0.8);
+    font-family:"Ubuntu", sans-serif;
+    margin-bottom:16px;
+    cursor:pointer;
+    -webkit-font-smoothing: antialiased;
+}
+li:hover {
+    color:rgba(255,255,255, 1);
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.toggle {
+    z-index: 1;
+    font-size: 30px;
+    width:3%;
+    height: 4%;
+    color:black;
+    position:fixed;
+    top:20px;
+    bottom:0;
+    right:0;
+    left:20px;
+    transition: all 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+#togglecheck {
+    display:none;
+}
+#togglecheck:checked + .content-wrap
+.sidebar {
+    left:0px;
+}
+#togglecheck:checked + .content-wrap
+.toggle {
+    left:200px;
+}
+#togglecheck:checked + .content-wrap
+.page-content {
+    left:100px;
+}
+.circle {
+    margin:auto;
+    display:block;
+    border-radius:125px;
+}
+.sidebar h3 {
+    font-size:17px;
+}
+.footer {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    height:20%;
+    position:relative;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+.copyright {
+    width:100%;
+    text-align: center;
+    color: white;
+}
+.copyright hr {
+    width: 80%;
+}
+.footer li {
+    margin-top: 10px;
+}
+li.links {
+    font-stretch: extra-expanded;
+    color: #a26262;
+
+}
+.social-media img {
+    padding-right:5px;
+    vertical-align: middle;
+}
+.social-media a {
+    text-decoration: none;
+    color:white;
+}
