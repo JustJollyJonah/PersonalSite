@@ -125,6 +125,7 @@ ul {
     background-color: #333;
     flex-wrap: wrap;
 }
+
 .copyright {
     width:100%;
     text-align: center;
@@ -136,7 +137,7 @@ ul {
 .footer li {
     margin-top: 10px;
 }
-li.links {
+li.linkheader {
     font-stretch: extra-expanded;
     color: #a26262;
 
